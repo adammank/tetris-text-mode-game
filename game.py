@@ -58,9 +58,6 @@ class TetrisArea(Tetris):
 
 class TetrisPiece(TetrisArea):
 
-    def __init__(self, width, heigth):
-        super().__init__(width, heigth)
-
     def new_piece(self):
         """Crate a new piece."""
         self.piece = piece.Piece(x=random.randint(1, 16), y=0)
@@ -80,9 +77,6 @@ class TetrisPiece(TetrisArea):
 
 
 class TetrisUtils(TetrisPiece):
-
-    def __init__(self, width, heigth):
-        super().__init__(width, heigth)
 
     def junction(self) -> bool:
         """Check if a junction has occurred."""
@@ -123,9 +117,6 @@ class TetrisUtils(TetrisPiece):
 
 
 class TetrisMoves(TetrisUtils):
-
-    def __init__(self, width, heigth):
-        super().__init__(width, heigth)
 
     def move_piece(self, side):
         """Move piece down + left / right / rotate depending on the choosen move.
@@ -209,5 +200,4 @@ class TetrisMoves(TetrisUtils):
 
 
 class TetrisGame(TetrisMoves):
-    def __init__(self, width, heigth):
-        super().__init__(width, heigth)
+    pass
