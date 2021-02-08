@@ -13,8 +13,8 @@ class Tetris:
 
 class TetrisArea(Tetris):
 
-    def __init__(self, width, heigth):
-        super().__init__(width, heigth)
+    def __init__(self, width, height):
+        super().__init__(width, height)
         self.create_area()
 
     def create_area(self):

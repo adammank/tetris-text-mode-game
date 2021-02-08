@@ -12,7 +12,7 @@ if __name__ == '__main__':
         '\n\ts = rotate piece clockwise + down'
     )
 
-    game = TetrisGame(width=20, heigth=20)
+    game = TetrisGame(width=20, height=20)
     game.new_piece()
     game.place_piece()
     game.draw_area()
